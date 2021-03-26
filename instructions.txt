@@ -5,6 +5,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.8
 sudo apt install python3-pip
+pip uninstall wheel
 pip install wheel
 
 
@@ -74,3 +75,14 @@ ARRAYFIRE:
 1. sudo bash -c " echo /opt/arrayfire/lib64 > /etc/ld.so.conf.d/arrayfire.conf"
 
 2. sudo ldconfig
+
+
+//websites:
+https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/
+
+https://arrayfire.org/docs/installing.htm
+
+https://askubuntu.com/questions/103643/cannot-echo-hello-x-txt-even-with-sudo
+
+https://gitlab.kitware.com/cmake/cmake/-/issues/19396
+
