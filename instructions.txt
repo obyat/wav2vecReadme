@@ -1,0 +1,76 @@
+﻿Installing python3.8:
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+sudo apt install python3-pip
+pip install wheel
+
+
+installing env:
+
+1. sudo apt-get install python3.8-venv
+2. python3.8 -m venv env
+3. source env/bin/activate
+
+Notes:
+purging root cache:
+pip3 cache purge
+
+intalling libraries:
+
+1. python3.8 -m pip install torch==1.7.0+cu101 torchvision==0.8.0+cu101 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+2. python3.8 -m pip install transformers
+
+///////////////////////completed///////////////////////////////////////////////////
+1-File: /audio_asr_to_text.py
+1. python3.8 -m pip install tqdm
+2. python3.8 -m pip install numpy
+
+2-FILE: /audio_embeding_view
+3-File: /cal_metrics
+
+4-File: /check_pause_length
+1. python3.8 -m pip install matplotlib
+2. python3.8 -m pip install jiwer
+
+5-File: /check_string_length
+6-File: /core.py
+7-File: /pre_train_audio_asr_to_text
+1. python3.8 -m pip install librosa
+2. python3.8 -m pip install fairseq
+
+8-File: /core.py
+9-File: /reformat_data
+
+10-File: /run_mlm
+1. python3.8 -m pip install datasets
+
+11-File: /text_token
+12-File: /text_train
+
+13-File: /
+1. Follow here: https://medium.com/@shaheenkader/how-to-install-wav2letter-dc94c3b74e97
+
+
+
+
+///////////////////////Issues///////////////////////////////////////////////////7-1. File: /recognize
+ISSUE: ModuleNotFoundError: No module named 'fairseq.version' & fairseq issues
+
+2. FileNotFoundError: [Errno 2] No such file or directory: 'pre_train_data/LibriSpeech/data.json'
+ISSUE: DATA MISSING
+
+3. 13-File: /wav2vec2_recognize
+ISSUE: fairseq libraries
+
+
+
+ARRAYFIRE:
+0. sudo bash ArrayFire-no-gl-v3.6.1_Linux_x86_64.sh --include-subdir --prefix=/opt
+
+1. sudo bash -c " echo /opt/arrayfire/lib64 > /etc/ld.so.conf.d/arrayfire.conf"
+
+2. sudo ldconfig
