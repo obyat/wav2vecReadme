@@ -5,8 +5,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.8
 sudo apt install python3-pip
-pip uninstall wheel
-pip install wheel
+
 
 
 installing env:
@@ -19,11 +18,14 @@ Notes:
 purging root cache:
 pip3 cache purge
 
-intalling libraries:
+initiallibraries:
 
-1. python3.8 -m pip install torch==1.7.0+cu101 torchvision==0.8.0+cu101 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+1. python3.8 -m pip --no-cache-dir install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
 
-2. python3.8 -m pip install transformers
+2. pip install wheel
+
+3. python3.8 -m pip install transformers
 
 ///////////////////////completed///////////////////////////////////////////////////
 1-File: /audio_asr_to_text.py
@@ -51,14 +53,15 @@ intalling libraries:
 
 11-File: /text_token
 12-File: /text_train
-
+1. python3.8 -m pip install datasets
 13-File: /
 1. Follow here: https://medium.com/@shaheenkader/how-to-install-wav2letter-dc94c3b74e97
 
+********************DIRL /examples/speech_recognition/********************
 
 
-
-///////////////////////Issues///////////////////////////////////////////////////7-1. File: /recognize
+///////////////////////Issues///////////////////////////////////////////////////
+7-1. File: /recognize
 ISSUE: ModuleNotFoundError: No module named 'fairseq.version' & fairseq issues
 
 2. FileNotFoundError: [Errno 2] No such file or directory: 'pre_train_data/LibriSpeech/data.json'
@@ -66,7 +69,7 @@ ISSUE: DATA MISSING
 
 3. 13-File: /wav2vec2_recognize
 ISSUE: fairseq libraries
-
+ISSUE: wav2letter
 
 
 ARRAYFIRE:
@@ -75,6 +78,40 @@ ARRAYFIRE:
 1. sudo bash -c " echo /opt/arrayfire/lib64 > /etc/ld.so.conf.d/arrayfire.conf"
 
 2. sudo ldconfig
+
+
+
+********************DIR /examples/speech_recognition/********************
+14-File: w2l_decoder.py /
+15-File: infer.py /
+1. python3.8 -m pip --no-cache-dir install editdistance
+
+16-file: __init__.py
+
+
+********************DIR /examples/speech_recognition/criterions********************
+*all sub .py files complete
+
+
+
+********************DIR wav2vec/examples/speech_recognition/data/********************
+*all sub .py files complete
+
+****COMPLETE*********DIR wav2vec/examples/speech_recognition/datasets/********************
+17-File: asr_prep_json.py 
+1. python3.8 -m pip --no-cache-dir install sentencepiece
+
+
+********************DIR wav2vec/examples/speech_recognition/models/w2l_conv_glu_enc.py********************
+*all sub .py files complete
+
+
+********************DIR wav2vec/examples/speech_recognition/tasks/********************
+*all sub .py files complete
+
+********************DIR wav2vec/examples/speech_recognition/utils/********************
+*all sub .py files complete
+
 
 
 //websites:
