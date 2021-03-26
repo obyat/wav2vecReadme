@@ -311,7 +311,7 @@ from enum import Enum
 import numpy as np
 
 import torch
-
+from fairseq import utils
 #from examples.speech_recognition import criterions, models, tasks 
 #from examples.speech_recognition.data import AsrDataset
 #from examples.speech_recognition.data.replabels import replabel_symbol
