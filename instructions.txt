@@ -61,23 +61,14 @@ Looking in links: https://download.pytorch.org/whl/torch_stable.html
 
 
 ///////////////////////Issues///////////////////////////////////////////////////
-7-1. File: /recognize
-ISSUE: ModuleNotFoundError: No module named 'fairseq.version' & fairseq issues
 
-2. FileNotFoundError: [Errno 2] No such file or directory: 'pre_train_data/LibriSpeech/data.json'
+1. FileNotFoundError: [Errno 2] No such file or directory: 'pre_train_data/LibriSpeech/data.json'
 ISSUE: DATA MISSING
 
-3. 13-File: /wav2vec2_recognize
+2. 13-File: /wav2vec2_recognize
 ISSUE: fairseq libraries
 ISSUE: wav2letter
 
-
-ARRAYFIRE:
-0. sudo bash ArrayFire-no-gl-v3.6.1_Linux_x86_64.sh --include-subdir --prefix=/opt
-
-1. sudo bash -c " echo /opt/arrayfire/lib64 > /etc/ld.so.conf.d/arrayfire.conf"
-
-2. sudo ldconfig
 
 
 
@@ -111,6 +102,41 @@ ARRAYFIRE:
 
 ********************DIR wav2vec/examples/speech_recognition/utils/********************
 *all sub .py files complete
+
+
+=>>>>>>>>>>>>>>>>>>>>>>>>>wav2letter<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[1] Arrayfire:
+1. sudo apt-get install cmake g++
+2. wget https://arrayfire.s3.amazonaws.com/3.6.1/ArrayFire-no-gl-v3.6.1_Linux_x86_64.sh
+3. chmod u+x ArrayFire-no-gl-v3.6.1_Linux_x86_64.sh
+4. sudo bash ArrayFire-no-gl-v3.6.1_Linux_x86_64.sh --include-subdir --prefix=/opt
+5. sudo bash -c 'echo /opt/arrayfire-no-gl/lib > /etc/ld.so.conf.d/arrayfire.conf'
+6. sudo ldconfig 
+
+[2] googletest:
+1. sudo apt-get install libgtest-dev
+2. sudo apt-get install cmake # install cmake
+3. cd /usr/src/gtest
+4. sudo cmake CMakeLists.txt
+5. sudo make
+6. cd lib
+7. sudo cp *.a /usr/lib
+
+[3] OpenMPI:
+1. sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev
+
+[4] flashlight:
+
+[5] CUDA:
+1. wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+2. sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+3. sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+4. sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+5. sudo apt-get update
+6. sudo apt-get -y install cuda
+
+
 
 
 
