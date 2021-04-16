@@ -43,17 +43,13 @@
 
 ### Installing python3.8:
 ```
-1. sudo apt update
-2. sudo apt install software-properties-common
-3. sudo add-apt-repository ppa:deadsnakes/ppa
-4. sudo apt install python3.8
-5. sudo apt install python3-pip
+sudo apt update  
+sudo apt install software-properties-common  
+sudo add-apt-repository ppa:deadsnakes/ppa  
+sudo apt install python3.8  
+sudo apt install python3-pip  
 ```
-1. sudo apt update
-2. sudo apt install software-properties-common
-3. sudo add-apt-repository ppa:deadsnakes/ppa
-4. sudo apt install python3.8
-5. sudo apt install python3-pip
+
 
 ## Installing env:
 1. sudo apt-get install python3.8-venv
