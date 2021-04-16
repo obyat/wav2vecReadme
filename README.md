@@ -42,7 +42,13 @@
 ### Python3.5 or newer is required for this project
 
 ### Installing python3.8:
-
+```
+1. sudo apt update
+2. sudo apt install software-properties-common
+3. sudo add-apt-repository ppa:deadsnakes/ppa
+4. sudo apt install python3.8
+5. sudo apt install python3-pip
+```
 1. sudo apt update
 2. sudo apt install software-properties-common
 3. sudo add-apt-repository ppa:deadsnakes/ppa
