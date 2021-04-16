@@ -16,7 +16,7 @@
 ## Run tests
 
 ```sh
-npm run test
+.....
 ```
 
 ## Author
@@ -24,7 +24,7 @@ npm run test
 👤 **Youxiang Zhu**
 
 * Website: http://www.faculty.umb.edu/xiaohui.liang/mobcp.html
-* GitHub: [@ billzyx ](https://github.com/ billzyx )
+* GitHub: [@ billzyx ](https://github.com/billzyx )
 
 ## Author
 
@@ -32,22 +32,14 @@ npm run test
 
 * Website: https://www.linkedin.com/in/abdelrahman-obyat-52065b173/
 * GitHub: [@ obyat ](https://github.com/obyat)
----
-modified: 2021-04-16T14:06:41.581Z
----
----
-modified: 2021-04-16T14:06:42.643Z
----
-**Xiaohui Liang**
+
+## Author
+
+👤 **Xiaohui Liang**
 
 * Website: http://faculty.umb.edu/xiaohui.liang/
 * Website: https://www.linkedin.com/in/xiaohui-liang-7622a419/
----
-modified: 2021-04-16T14:08:23.644Z
----
----
-modified: 2021-04-16T14:08:28.839Z
----
+
 
 ## Show your support
 
