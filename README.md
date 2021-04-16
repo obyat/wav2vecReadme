@@ -52,13 +52,18 @@ sudo apt install python3-pip
 
 
 ## Installing env:
-1. sudo apt-get install python3.8-venv
+```
+sudo apt-get install python3.8-venv  
+```
 
 
 Please note, if root system is full and no system storage available error is encountered. The following is recommended:
-1. pip3 cache purge
-2. Restart system in order to clear root cache
+```
+pip3 cache purge
+```
+Restarting system in order also clear root cache
 
+<span style="color:red">some *blue* text</span>.
 ## Please note, the following must be install in env variable using the following commands:
 1. python3.8 -m venv env
 2. source env/bin/activate
