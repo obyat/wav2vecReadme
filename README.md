@@ -63,7 +63,7 @@ pip3 cache purge
 ```
 Restarting system in order also clear root cache
 
-<span style="color:red">some *blue* text</span>.
+<span style="color:red">some **This is Red Bold.** text</span>
 ## Please note, the following must be install in env variable using the following commands:
 1. python3.8 -m venv env
 2. source env/bin/activate
