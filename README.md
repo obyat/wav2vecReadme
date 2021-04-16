@@ -18,7 +18,12 @@
 ```sh
 .....
 ```
+## Author
 
+👤 **Xiaohui Liang**
+
+* Website: http://faculty.umb.edu/xiaohui.liang/
+* Website: https://www.linkedin.com/in/xiaohui-liang-7622a419/
 ## Author
 
 👤 **Youxiang Zhu**
@@ -33,12 +38,7 @@
 * Website: https://www.linkedin.com/in/abdelrahman-obyat-52065b173/
 * GitHub: [@ obyat ](https://github.com/obyat)
 
-## Author
 
-👤 **Xiaohui Liang**
-
-* Website: http://faculty.umb.edu/xiaohui.liang/
-* Website: https://www.linkedin.com/in/xiaohui-liang-7622a419/
 
 
 ## Show your support
