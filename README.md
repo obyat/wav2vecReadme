@@ -62,7 +62,13 @@ Please note, if root system is full and no system storage available error is enc
 pip3 cache purge
 ```
 Restarting system in order also clear root cache
+s { text-decoration:none; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
 
+
+// colors
+s { color: green }
+em { color: blue }
 <span style="color:red">some **This is Red Bold.** text</span>
 ## Please note, the following must be install in env variable using the following commands:
 1. python3.8 -m venv env
